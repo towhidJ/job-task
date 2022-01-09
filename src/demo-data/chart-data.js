@@ -56,22 +56,30 @@ export const data = {
 export const dataA = {
     series: [
         {
-            data: [1000, 2000, 3000, 4000],
+            name: "Q1",
+            data: [1000, 2000, 6000],
         },
         {
-            data: [3000, 4000, 3000, 5000],
+            name: "Q2",
+            data: [1500, 3800, 7000],
         },
         {
-            data: [6000, 6500, 7000, 8000],
+            name: "Q3",
+            data: [2000, 4500],
+        },
+        {
+            name: "Q4",
+            data: [2500, 5500],
         },
     ],
     options: {
         chart: {
             type: "bar",
-            height: 230,
+            height: 250,
         },
-        fill: { colors: ["#008E97", "#DA9100", "#FB564E"] },
-        colors: ["#008E97", "#DA9100", "#FB564E"],
+
+        fill: { colors: ["#008E97", "#DA9100", "#FB564E", "#1c2920"] },
+        colors: ["#008E97", "#DA9100", "#FB564E", "#1c2920"],
         plotOptions: {
             bar: {
                 horizontal: false,
@@ -99,11 +107,11 @@ export const dataA = {
             intersect: false,
         },
         xaxis: {
-            categories: ["JAN", "FEB", "MAR"],
+            categories: ["2019", "2020", "2021"],
         },
-        title: {
-            text: "Ageing Statement",
-        },
+    },
+    title: {
+        text: "Ageing Statement",
     },
 };
 
@@ -122,6 +130,7 @@ export const donatData = {
                 opacity: 0.2,
             },
         },
+
         fill: { colors: ["#008E97", "#DA9100"] },
         colors: ["#008E97", "#DA9100"],
         stroke: {
